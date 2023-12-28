@@ -1,0 +1,271 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body { 
+    color: rgb(11, 11, 11);
+}
+
+.header { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10px;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuch MS', sans-serif;
+    background-color: rgb(0, 0, 0.150);
+    }
+    .header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        transition: top 0.3s ease-in-out; /* Adjust the duration as needed */
+    }
+
+    .mylogo {
+        position: relative;
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-weight: 800;
+        cursor: pointer;
+        border-bottom: 2px solid white; 
+        border-top: 2px dashed white; 
+        border-left: 2px dashed white; 
+        border-right: 2px dashed white;
+        display: inline-block; 
+        padding: 5px; 
+    }
+    
+    
+    
+
+    .navbar a {
+        position: relative;
+        font-size: 1.1em;
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        margin-left: 30px;
+        }
+
+        .navbar a:hover { 
+            color: orange;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 10px;
+        }
+
+        button {
+            padding: 14px;
+            background: url('button.jpeg') center center no-repeat; 
+            background-size: cover; 
+            color: #000000;
+            border: none;
+            cursor: pointer;
+        }
+
+        input, button {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+
+        .home { 
+            position: relative;
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('appliances3.jpg') center center no-repeat;
+            background-size: cover;
+            border-radius: 15px;
+        }
+        
+        .content {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #cfcfcf; 
+            z-index: 1; 
+        }
+        
+        .content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0px; 
+            height: 100%;
+            z-index: -1;
+            background-color: rgba(0, 0, 0, 0.3); 
+        }
+        
+        .content h1,
+        .content h3 {
+            margin: 20px;
+            font-family: 'Your Font', sans-serif; 
+            -webkit-text-stroke: 2px rgba(0, 0, 0, 0.7); 
+            text-stroke: 2px rgba(0, 0, 0, 0.7); 
+            color: white; 
+        }
+        
+        .content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        
+        .content h3 {
+            font-size: 3em;
+        }
+        
+        body {
+            background-color: #cfcfcf;
+        }
+
+        .ABOUT {
+            text-align: center;
+            margin-top: 100px;
+        }
+        
+        .ABOUT h1{
+            color: rgb(0, 140, 255);
+            font-family: '',  Kalnia;
+            font-size: 50px;
+        }
+        .ABOUT p{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+          
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .gallery-item p {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 8px;
+            margin: 0;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.2);
+        }
+        
+        .gallery-item:hover p {
+            opacity: 1;
+        }
+        
+        .items h1 {
+            margin-top: 80px;
+            margin-bottom: 30px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-family: '',  Kalnia;
+            font-size: 50px;
+        }
+       
+
+        .product-wrapper {
+            display: flex;
+            align-items: flex-start;
+        }
+    
+        .left-image {
+            width: 50%; 
+            margin-right: 20px; 
+        }
+    
+        .right-paragraph {
+            flex: 1;
+            margin-top: 50px;
+            outline: 2px solid #000; 
+            padding: 10px;
+            color: #000;
+            font-style: oblique;
+        }
+        link[rel="icon"] {
+            border-radius: 1000%;
+        }
+
+        .arrow-down {
+            cursor: pointer;
+        }
+
+        .hidden {
+            display: none;
+        }
+        .product-wrapper {
+            position: relative;
+            overflow: hidden;
+        }
+    
+        .product-wrapper img {
+            transition: transform 0.3s ease-in-out;
+        }
+    
+        .product-wrapper .hover-paragraph {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50%;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            margin: 0;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+    
+        .product-wrapper img:hover {
+            transform: scale(1.2); 
+        }
+    
+        .product-wrapper img:hover + .hover-paragraph {
+            opacity: 1;
+        }
+        
