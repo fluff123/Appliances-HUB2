@@ -1,1 +1,1 @@
-# Appliances-HUB.com
+# Appliances-HUB
